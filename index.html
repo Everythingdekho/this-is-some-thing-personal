@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For My Love ❤️</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Background Music -->
+<audio id="bgMusic" loop>
+    <source src="music/song.mp3" type="audio/mpeg">
+</audio>
+
+<!-- PASSWORD SCREEN -->
+<div class="password-screen" id="passwordScreen">
+    <div class="password-box">
+        <h2>Enter The Date Our Story Began ❤️</h2>
+        <input type="password" id="passwordInput" placeholder="DDMMYYYY">
+        <button onclick="checkPassword()">Unlock My Heart 💖</button>
+        <p id="errorMsg"></p>
+    </div>
+</div>
+
+<!-- MAIN CONTENT (Hidden Before Unlock) -->
+<div id="mainContent" style="display:none;">
+
+    <!-- HERO -->
+    <section class="hero">
+        <h1 class="mainTitle">Happy Birthday My Love ❤️</h1>
+
+        <!-- Love Counter -->
+        <div class="loveContainer">
+            <h3>Since 21 July 2024</h3>
+            <div id="loveCounter"></div>
+        </div>
+
+        <button onclick="scrollToGallery()">See Our Memories 💕</button>
+    </section>
+
+    <!-- GALLERY -->
+    
+        <h2>Our Beautiful Journey ✨</h2>
+        <section class="slider-section hidden">
+    <div class="slider">
+        <img id="slide" src="images/1.jpg">
+    </div>
+</section>
+        
+    <!-- LETTER -->
+    <section class="letter">
+        <h2>From My Heart 💌</h2>
+        <p>
+            21 July 2024 changed my life forever.<br><br>
+            Since that day, every second with you feels magical.<br>
+            You are my today, my tomorrow, my forever ❤️
+        </p>
+    </section>
+
+    <!-- FINAL SURPRISE -->
+    <section class="surprise">
+        <button onclick="finalSurprise()">Final Surprise 🎁</button>
+        <h2 id="finalMessage"></h2>
+    </section>
+
+</div>
+
+<div class="hearts"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
